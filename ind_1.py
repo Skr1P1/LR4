@@ -7,10 +7,10 @@ if __name__ == '__main__':
     str = input('Введите предложение -->')
 
     liters = ['o', 'O', 'о', 'О']
-    out_lst = []
+    n = 0
 
     for i in str:
         if i in liters:
-            out_lst.append(i)
+            n += 1
 
-    print('Кол-во букв "о":', len(out_lst))
+    print('Кол-во букв "о":', n)

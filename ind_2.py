@@ -2,11 +2,10 @@ s = input('Введите предложение -->')
 
 word = s.split(' ')
 liters = ['или']
-out_lst = []
+n = 0
 
 for i in word:
     if i in liters:
-        out_lst.append(i)
+        n += 1
 
-    print(i)
-print('Кол-во слов "или":', len(out_lst))
+print('Кол-во слов "или":', n)
